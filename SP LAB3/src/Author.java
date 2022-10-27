@@ -7,8 +7,6 @@ public class Author {
     }
 
     public void  print(){
-        System.out.println("\nAuthors:");
         System.out.println("Author: " + name);
-        System.out.println();
     }
 }

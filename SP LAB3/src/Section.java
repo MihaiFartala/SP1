@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Section implements Element{
     String title;
-    List<Author> Authors = new ArrayList<>();
     List<Element> ListofContent = new ArrayList<>();
     public Section(String title) {
         this.title = title;
@@ -21,9 +20,6 @@ public class Section implements Element{
     @Override
     public void get(int i) {
     }
-    public void addAuthor(Author author){
-        Authors.add(author);
-    }
     public void addContent(Paragraph paragraph) {
         ListofContent.add(paragraph);
     }
@@ -34,11 +30,6 @@ public class Section implements Element{
 
     public void print() {
         System.out.println(title);
-
-        for (Author a:Authors
-             ) {
-            a.print();
-        }
 
         for (Element e:ListofContent
              ) {

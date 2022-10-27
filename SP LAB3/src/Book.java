@@ -2,16 +2,27 @@ import java.util.ArrayList;
 import java.util.List;
 public class Book extends Section{
 
+    List<Author> Authors = new ArrayList<>();
     public Book(String bookTitle) {
         super(bookTitle);
     }
 
-   /* public void print(){
+    public void addAuthor(Author author){
+        Authors.add(author);
+    }
+
+    public void print(){
         System.out.println(title);
+
         System.out.println("\nAtuhors:");
+
         for(Author a: Authors){
             a.print();
         }
+        System.out.println();
+        for (Element e:ListofContent
+        ) {
+            e.print();
+        }
     }
-*/
 }
