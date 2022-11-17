@@ -6,8 +6,8 @@ public class Author {
         this.name = name;
     }
 
-
     public void  print(){
-        System.out.println("Author: " + name);
+        System.out.print("Author: " + name);
+        System.out.println();
     }
 }
